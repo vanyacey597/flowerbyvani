@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaniflower - All in JS</title>
+    <title>Vaniflower - menyiram bunga</title>
 </head>
 <body>
     <div id="app"></div>
@@ -32,7 +32,7 @@
             .moisture-val { font-size: 3rem; color: #2563eb; font-weight: bold; }
             .btn-siram { 
                 background: #22c55e; 
-                color: white; 
+                color: cream; 
                 border: none; 
                 padding: 12px 25px; 
                 border-radius: 10px; 
@@ -55,7 +55,7 @@
             <p style="color: #666; margin-top: 5px;">Smart Garden System</p>
             <div class="moisture-val" id="lvl">45%</div>
             <p>Kelembapan Tanah</p>
-            <div id="plant">🌵</div>
+            <div id="plant">🌱</div>
             <button class="btn-siram" id="btn">Siram Tanaman</button>
         `;
 
@@ -75,7 +75,7 @@
             setTimeout(() => {
                 lvl.innerText = "90%";
                 plant.innerText = "🌻";
-                btn.innerText = "Sudah Segar!";
+                btn.innerText = "yey, bungamu Sudah Segar!";
                 
                 setTimeout(() => {
                     btn.disabled = false;
